@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, button{
+    border: none;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.hero{
+    margin-top: 96px;
+    .container{
+        .hero__wrapper{
+            display: flex;
+            justify-content: space-between;
+            .hero__left{
+                h3{
+                    color: var(--black, #232536);
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    letter-spacing: 3px;
+                }
+
+                h1{
+                    color: var(--black, #232536);
+                    text-align: center;
+                    font-family: Poppins;
+                    font-size: 48px;
+                    font-weight: 600;
+                    line-height: 58px; 
+                    margin-top: 24px;
+                }
+
+                p{
+                    color: var(--black, #232536);
+                    max-width: 430px;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    margin-top: 16px;
+                }
+
+                button{
+                    width: 182px;
+                    height: 64px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 13px;
+                    background: linear-gradient(180deg, #444CFC 0%, #444CFC 100%);
+                    margin-top: 40px;
+                    h6{
+                        color: #FFF;
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px; 
+                        padding-bottom: 15px;
+                    }
+                }
+            }
+            .hero__right{
+                width: 515px;
+                height: 324px;
+                background: #FFE0C7;
+                padding: 80px;
+                h2{
+                    color: var(--black, #232536);
+                    font-family: Poppins;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 36px;
+                    text-align:start;
+                }
+
+                p{
+                    color: #000;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+}
+
+.info{
+    margin-top: 96px;
+    .container{
+        .info__wrapper{
+            .info__header{
+                display: flex;
+                height: 108px;
+                background: #ECF8F9;
+                gap: 96px;
+                justify-content: center;
+                align-items: center;
+                h2{
+                    color: #000;
+                    font-family: Poppins;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 36px; 
+                    cursor: pointer;
+                    &:hover{
+                        color: #454DFD;
+                        border-bottom: #454DFD;
+                    }
+                }
+            }
+            .info__main{
+                background: #ECF8F9;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                ul{
+                    padding-bottom: 96px;
+                    li{
+                        color: #000;
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px; 
+                        max-width: 842px;
+                        padding-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.search-field{
+    padding: 10px 15px;
+    width: 624px;
+    height: 96px;
+    font-size: 1rem;
+    line-height: 1.5em;
+    color: #373D41;
+    background: #F9F9FF;
+    background-clip: padding-box;
+    border: none;
+    outline: none;
+
+    &::placeholder{
+        color: #232536;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        opacity: 0.8;
+    }
+}
+
+.sign__up{
+    margin-top: 96px;
+    .container{
+            h2{
+                color: #232536;
+                font-family: Poppins;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 54px;
+            }
+
+            .inputs{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                grid-column-gap: 32px;
+                grid-row-gap: 32px;
+            }
+    }
+}
+
+.subcribe{
+    margin-top: 96px;
+    .container{
+        .subcribe__wrapper{
+            display: flex;
+            align-items: center;
+            height: 333px;
+            justify-content: space-between;
+            padding: 0 96px;
+            background: var(--secondary-blue, #666DFF);
+            .subcribe__text{
+                h3{
+                    color: #FFF;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px; 
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                }
+                h2{
+                    color: #FFF;
+                    font-family: Poppins;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 54px;
+                    max-width: 488px;
+                }
+            }
+
+            .subcribe__input{
+                .subcribe-field{
+                    padding: 10px 15px;
+                    width: 454px;
+                    height: 64px;
+                    font-size: 1rem;
+                    line-height: 1.5em;
+                    color: #373D41;
+                    background: #F9F9FF;
+                    background-clip: padding-box;
+                    border: none;
+                    outline: none;
+                
+                    &::placeholder{
+                        color: #232536;
+                        font-family: Poppins;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 28px;
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .hero__wrapper{
+        display: flex;
+        flex-direction: column;
+        .hero__left{
+            p{margin-left: 120px;}
+            button{
+                margin-left: 200px;
+                h6{
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        .hero__right{
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+    }
+
+    .info__main{
+        ul{
+            li{
+                max-width: 20px;
+                margin-left: 50px;
+            }
+        }
+    }
+
+    .inputs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 32px;
+        grid-row-gap: 0px;
+    }
+
+    .subcribe__wrapper{
+        flex-direction: column;
+        h3{
+            justify-content: center;
+        }
+        h2{
+            max-width: 500px;
+            text-align: center;
+        }
+        .subcribe-field{
+            max-width: 600px;
+            margin-bottom: 50px;
+        }
+    }
+}
