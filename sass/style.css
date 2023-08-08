@@ -424,7 +424,7 @@ body main .local .container .local-content .left .p16 {
 }
 
 body main .local .container .local-content .right .cards {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 6px;
 }
@@ -432,6 +432,7 @@ body main .local .container .local-content .right .cards {
 body main .local .container .local-content .right .cards .card {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 16px;
   align-items: center;
   height: 140px;
@@ -439,8 +440,13 @@ body main .local .container .local-content .right .cards .card {
   background-color: white;
 }
 
-body main .local .container .local-content .right .cards .card img {
+body main .local .container .local-content .right .cards .card .imgsss {
   padding-left: 32px;
+}
+
+body main .local .container .local-content .right .cards .card .card-text {
+  display: flex;
+  flex-direction: row;
 }
 
 body main .local .container .local-content .right .cards .card .card-text .p17 {
@@ -461,7 +467,6 @@ body main .local .container .local-content .right .cards .card .card-text .p18 {
   font-style: normal;
   font-weight: 500;
   line-height: 20px; /* 142.857% */
-  max-width: 303px;
 }
 
 body main .solution {
@@ -1159,12 +1164,6 @@ body main .letter .container .letter-content .right input {
   line-height: 24px;
 }
 
-.right {
-  width: 524px;
-  height: 290px;
-  background: rgba(255, 211, 175, 0.57);
-}
-
 .ob2 {
   display: flex;
   justify-content: space-between;
@@ -1281,11 +1280,6 @@ body main .letter .container .letter-content .right input {
   line-height: 24px;
 }
 
-.img {
-  width: 1200px;
-  padding: 50px 0px 0px 0px;
-}
-
 .page3-hero6 {
   height: 900px;
 }
@@ -1327,20 +1321,7 @@ body main .letter .container .letter-content .right input {
     max-width: 550px;
   }
 }
-@media (max-width: 1220px) {
-  .img {
-    width: 800px;
-  }
-}
-@media (max-width: 828px) {
-  .img {
-    width: 400px;
-  }
-}
 @media (max-width: 423px) {
-  .img {
-    width: 280px;
-  }
   .page3-11 {
     max-width: 700px;
     font-size: 22px;

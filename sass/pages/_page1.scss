@@ -204,21 +204,25 @@ body {
           }
           .right {
             .cards {
-              display: flex;
+              display: none;
+              // display: flex;
               flex-direction: column;
               gap: 6px;
               .card {
                 display: flex;
                 flex-direction: row;
+                justify-content: center;
                 gap: 16px;
                 align-items: center;
                 height: 140px;
                 width: 515px;
                 background-color: white;
-                img {
+                .imgsss {
                   padding-left: 32px;
                 }
                 .card-text {
+                  display: flex;
+                  flex-direction: row;
                   .p17 {
                     color: #000;
                     font-family: Poppins;
@@ -227,6 +231,7 @@ body {
                     font-weight: 600;
                     line-height: 28px;
                     padding-bottom: 8px;
+                    // max-width: 300px;
                   }
                   .p18 {
                     color: #5d5f6d;
@@ -237,7 +242,7 @@ body {
                     font-style: normal;
                     font-weight: 500;
                     line-height: 20px; /* 142.857% */
-                    max-width: 303px;
+                    // max-width: 303px;
                   }
                 }
               }
